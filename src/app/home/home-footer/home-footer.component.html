@@ -1,0 +1,48 @@
+<div fxFlex="100%" fxLayout="column" style="background-color: rgb(19, 19, 19); padding-inline: 10%;">
+    <div fxFlex="100%" fxLayout="row" style="padding-inline: 10%;">
+        <div fxFlex="50%">Icon</div>
+        <div fxFlex="50%" fxLayout="row" fxLayoutGap="20px grid">
+            <div fxLayout="100%" fxLayout="column" fxLayoutAlign=" start">
+                <div fxFlex="100%" style="color:white">INICIO</div>
+                <div fxFlex="100%" fxLayout="column" fxLayoutAlign=" start" *ngFor="let label of home " style="color:white">{{label}}</div>
+            </div>
+            <div fxLayout="100%" fxLayout="column" fxLayoutAlign=" start">
+                <div fxFlex="100%" style="color:white">SERVICIOS</div>
+                <div fxFlex="100%" fxLayout="column" fxLayoutAlign=" start" *ngFor="let label of services " style="color:white">{{label}}</div>
+            </div>
+            <div fxLayout="100%" fxLayout="column" fxLayoutAlign=" start">
+                <div fxFlex="100%" style="color:white">NOSOTROS</div>
+                <div fxFlex="100%" fxLayout="column" fxLayoutAlign=" start" *ngFor="let label of us " style="color:white">{{label}}</div>
+            </div>
+            <div fxLayout="100%" fxLayout="column" fxLayoutAlign=" start">
+                <div fxFlex="100%" style="color:white">PAQUETES</div>
+                <div fxFlex="100%" fxLayout="column" fxLayoutAlign=" start" *ngFor="let label of packages " style="color:white">{{label}}</div>
+            </div>
+        </div>
+    </div>
+    <div fxFlex="100%">
+        <hr>
+    </div>
+
+    <div fxFlex="100%" fxLayout="column" fxLayoutGap="10px" style="padding-inline: 10%; margin-bottom: 30px;">
+        <div fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between">
+            <div>
+                NUEVO MAIL
+            </div>
+            <div>
+                SIGUENOS
+            </div>
+        </div>
+        <div fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between">
+            <div fxLayout="row">
+                <input label="Escribe tu e-mail">
+                <div>ENVIAR</div>
+            </div>
+            <div fxLayout="row">
+                <div>t</div>
+                <div>f</div>
+                <div>i</div>
+            </div>
+        </div>
+    </div>
+</div>
